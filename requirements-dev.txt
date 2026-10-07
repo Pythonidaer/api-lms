@@ -1,0 +1,4 @@
+beautifulsoup4==4.15.0
+markdownify==1.2.3
+openapi-spec-validator==0.9.0
+jsonschema==4.26.0

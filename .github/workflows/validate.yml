@@ -1,0 +1,22 @@
+name: Validate API course and contract
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -m pip install -r requirements-dev.txt
+      - run: python3 scripts/build-course.py && python3 scripts/build-practice.py
+      - run: git diff --exit-code
+      - run: node scripts/test-content.cjs
+      - run: node scripts/test-api.cjs /tmp/api-responses.json
+      - run: python3 scripts/validate-contract.py /tmp/api-responses.json
+      - run: npm install --ignore-scripts
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/test-browser.cjs
