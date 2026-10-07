@@ -96,6 +96,6 @@ body.lms-export-body{margin:0}
 .lms-copy-course svg{flex-shrink:0}.lms-copy-status:empty{display:none}.lms-copy-status{margin:10px 0 0}
 .lms-copy-fallback{display:grid;gap:8px;margin-top:12px}.lms-copy-fallback textarea{width:100%;min-width:0;padding:8px;background:var(--lms-background);color:var(--lms-text);border:1px solid var(--lms-border);border-radius:var(--lms-radius);font:12px/1.5 monospace}
 .lms-search-label{display:block;font-size:.8rem;margin-bottom:.4rem;color:var(--lms-muted)}
-#lms-search{width:100%;min-height:44px;font-size:16px;background:var(--lms-background);color:var(--lms-text);border:1px solid var(--lms-border);padding:.6rem;border-radius:6px}
-.lms-search-status{font-size:.8rem;min-height:1.3em;margin:.4rem 0}
+#lms-search{display:block;width:calc(100% - 32px);margin:0 16px;min-height:44px;font-size:16px;background:var(--lms-background);color:var(--lms-text);border:1px solid var(--lms-border);padding:.6rem;border-radius:6px}
+.lms-search-status{font-size:.8rem;min-height:1.3em;margin:.4rem 16px}
 .lms-outline li[hidden]{display:none}
