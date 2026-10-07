@@ -1,5 +1,7 @@
 # API Learning Studio
 
+**Live course:** https://pythonidaer.github.io/api-lms/ (GitHub Pages from `main`)
+
 A standalone API LMS following **JSON → HTTP → API → GraphQL**, with short transport/format refreshers and a focused API learning path.
 
 - **31 guided lessons / 189 slides**: API concepts, consumption, resource/data contracts, identity/security, OpenAPI, testing, reliable integrations and lifecycle management.

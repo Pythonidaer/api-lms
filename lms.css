@@ -66,6 +66,7 @@ body.lms-export-body{margin:0}
 
 #lms-root .lms-primary{background:var(--lms-brand);color:var(--lms-on-brand);border-color:var(--lms-brand);font-weight:800}
 #lms-root button.lms-primary:disabled{opacity:.55;background:var(--lms-brand);color:var(--lms-on-brand);border-color:var(--lms-brand)}
+#lms-root button[data-lms=complete],#lms-root button[data-lms=complete]:disabled{cursor:pointer}
 #lms-root .lms-home{color:inherit;font:inherit;letter-spacing:inherit;text-decoration:none}
 #lms-root .lms-home:hover,#lms-root .lms-home:focus-visible{text-decoration:underline;text-underline-offset:4px}
 #lms-root .lms-header{position:relative;z-index:40}
