@@ -1,0 +1,14 @@
+{
+  "name": "api-learning-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Standalone API LMS with a local contract-practice fixture",
+  "scripts": {
+    "start": "node scripts/practice-server.cjs",
+    "test:content": "node scripts/test-content.cjs",
+    "test:api": "node scripts/test-api.cjs",
+    "test:browser": "node scripts/test-browser.cjs"
+  },
+  "engines": { "node": ">=20" },
+  "devDependencies": { "playwright": "1.62.1" }
+}
